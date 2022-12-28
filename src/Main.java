@@ -53,14 +53,11 @@ public class Main {
 
         if (age >= 2 && age <= 6) {
             System.out.println("Если возраст человека равен " + age + " лет, то ему нужно ходить в детский сад");
-        }
-        if (age >= 7 && age <= 18) {
+        } else if (age >= 7 && age <= 18) {
             System.out.println("Если возраст человека равен " + age + " лет, то ему нужно ходить в школу");
-        }
-        if (age > 18 && age <= 24) {
+        } else if (age > 18 && age <= 24) {
             System.out.println("Если возраст человека равен " + age + " лет, то его место в университете");
-        }
-        if (age > 24) {
+        } else if (age > 24) {
             System.out.println("Если возраст человека равен " + age + " лет, то ему пора ходить на работу");
         }
     }
@@ -72,11 +69,9 @@ public class Main {
 
         if (age < 5) {
             System.out.println("Если возраст ребенка равен " + age + " лет, то ему нельзя кататься на аттракционе");
-        }
-        if (age >= 5 && age <= 14) {
+        } else if (age >= 5 && age <= 14) {
             System.out.println("Если возраст ребенка равен " + age + " лет, то ему можно кататься на аттракционе в сопровождении взрослого");
-        }
-        if (age > 14) {
+        } else if (age > 14) {
             System.out.println("Если возраст ребенка равен " + age + " лет, то ему можно кататься на аттракционе без сопровождении взрослого");
         }
 
@@ -85,23 +80,19 @@ public class Main {
     public static void task6 () {
         System.out.println("Задача 6");
 
-        int passengersInVag = 103;
+        int passengersInVag = 50;
         int vagCapacity = 102;
         int vagSeats = 60;
         int vagStandingPlaces = vagCapacity - vagSeats;
 
         if (passengersInVag > vagSeats && passengersInVag < vagCapacity) {
             System.out.println("В вагоне едут " + passengersInVag + " пассажиров. В вагоне остались только стоячие места.");
-        }
-        else {
-            if (passengersInVag < vagSeats){
+        } else if (passengersInVag < vagSeats){
                 System.out.println("В вагоне едут " + passengersInVag + " пассажиров. В вагоне есть сидячие места.");
-            }
-            else {
+        } else {
                 System.out.println("В вагоне едут 102 пассажира. Вагон уже полностью забит.");
             }
         }
-    }
 
     public static void task7 () {
         System.out.println("Задача 7");
